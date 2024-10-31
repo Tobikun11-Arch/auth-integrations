@@ -1,3 +1,5 @@
+import SignIn from "./profile/page"
+
 export default function Home() {
-    return <h1>Main page</h1>
+    return SignIn()
 }
