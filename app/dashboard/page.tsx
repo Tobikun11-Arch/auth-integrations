@@ -2,6 +2,7 @@ import { auth, signOut } from '../auth'
 import { redirect } from 'next/navigation'
 
 export default async function Dashboard() {
+    //added home
     const session = await auth()
     if(!session) redirect('/')
     
