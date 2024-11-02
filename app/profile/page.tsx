@@ -4,11 +4,10 @@ import Image from "next/image"
 
 export default async function SignIn() {
     const session = await auth()
-    console.log(session)
     const user = session?.user
     if(session) redirect('/dashboard')
 
-    return user ? ('') : 
+    return user ? ('') :
     (<>
         <div className="h-screen flex bg-white justify-center items-center">
             <div className="flex flex-col gap-2">
